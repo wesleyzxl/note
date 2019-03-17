@@ -181,7 +181,7 @@ jsp中java代码需要与html代码进行分离
     </html>
     ```
     输出结果
-    ![Snipaste_2019-03-04_19-41-32](https://github.com/wesleyzxl/note/raw/master/JavaWeb/jsp/pic/Snipaste_2019-03-04_19-41-32.png)
+    ![m](https://github.com/wesleyzxl/note/raw/master/JavaWeb/jsp/pic/Snipaste_2019-03-04_19-41-32.png)
 
 ---
 
