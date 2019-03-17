@@ -532,7 +532,7 @@ public class DBCPUtil {
 
 用户的信息需要保存在Oracle数据库里，需要自己创建一张用户表member，该表中只有两个字段mid(varchar2(50)), password(varchar2(32))，其中mid为主键
 
-![Snipaste_2019-03-05_16-42-30](https://github.com/wesleyzxl/note/blob/master/JavaWeb/jsp/pic/Snipaste_2019-03-05_16-42-30.png)
+![Snipaste_2019-03-05_16-42-30](pic/Snipaste_2019-03-05_16-42-30.png)
 
 
 
