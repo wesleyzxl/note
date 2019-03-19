@@ -23,7 +23,7 @@ xml文件中的书写方式
 于是js部分
 
 ```javascrip
-<script type="text/javascript">
+	<script type="text/javascript">
             window.onload = function () {
                 var aNodes = document.getElementsByTagName("a");
                 for (var i = 0; aNodes.length > i; i++) {
@@ -71,3 +71,14 @@ xml文件中的书写方式
             };
         </script>
 ```
+
+
+## 优缺点
+
+### 优点：
+- XML 是一种通用的数据格式。
+- 不必把数据强加到已定义好的格式中，而是要为数据自定义合适的标记。
+利用 DOM 可以完全掌控文档。
+### 缺点：
+如果文档来自于服务器，就必须得保证文档含有正确的首部信息。若文档类型不正确，那么 responseXML 的值将是空的。
+当浏览器接收到长的 XML 文件后， DOM 解析可能会很复杂
