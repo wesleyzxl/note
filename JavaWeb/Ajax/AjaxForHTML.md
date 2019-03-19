@@ -12,4 +12,34 @@
 案例原始状态
 ![](pic/Snipaste_2019-03-19_17-10-05.png)
 
+在body的最后添加
 
+```javascript
+<script type="text/javascript">
+
+    window.onload = function () {
+        var aNodes = document.getElementsByTagName("a");
+        for (var i = 0; aNodes.length > i; i++) {
+            aNodes[i].onclick = function () {
+
+                var request = new XMLHttpRequest();
+                var method = "GET";
+                var url = this.href;
+
+                request.open(method, url);
+                request.send(null);
+
+                request.onreadystatechange = function () {
+                    if (request.readyState === 4) {
+                        if (request.status === 302 || request.status === 200) {
+                            document.getElementById("details").innerHTML = request.responseText;
+                        }
+                    }
+                };
+
+                return false;
+            };
+        }
+    }
+</script>
+```
