@@ -9,17 +9,24 @@
 <body>
 
 <script type="text/javascript">
-    var jaon = {
+    var json = {
         "name":"wesley",
         "age":12,
-        "address":{"city":"Shanghai", "road":"nanjing"}
+        "address":{"city":"Shanghai", "road":"nanjing"},
+
+        "play":function () {
+            alert("games");
+        }
     };
 
-    alert(jaon.name);
-    alert(jaon.address.city);
+    alert(json.name);
+    alert(json.address.city);
+
+    json.play();
 </script>
+</body>
 ```
 
 结果
 
-![](pic/Snipaste_2019-03-19_20-08-20.png)
+![](pic/Snipaste_2019-03-19_20-26-26.png)
