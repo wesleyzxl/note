@@ -32,3 +32,6 @@
 ![](pic/Snipaste_2019-03-19_20-26-26.png)
 
 ### 解析json
+
+JSON只是一种文本字符串，它被存储在 responseText 属性中
+为了读取存储在 responseText 属性中的 JSON 数据，需要根据 JavaScript 的 eval 语句。
