@@ -47,3 +47,57 @@ JSON只是一种文本字符串，它被存储在 responseText 属性中
 }
 ```
 
+接收页面添加js代码
+
+```javascript
+<script type="text/javascript">
+
+    window.onload = function () {
+        var aNodes = document.getElementsByTagName("a");
+        for (var i = 0; aNodes.length > i; i++) {
+            aNodes[i].onclick = function () {
+
+                var request = new XMLHttpRequest();
+                var method = "GET";
+                var url = this.href;
+
+                request.open(method, url);
+                request.send(null);
+
+                request.onreadystatechange = function () {
+                    if (request.readyState === 4) {
+                        if (request.status === 302 || request.status === 200) {
+
+                            // 获取
+                            var result = request.responseText;
+                            var object = eval("(" + result + ")");
+
+                            var name = object.person.name;
+                            var website = object.person.website;
+                            var email = object.person.email;
+
+                            // 生成html对应的格式
+                            var aNode = document.createElement("a");
+                            aNode.appendChild(document.createTextNode(name));
+                            aNode.href = "mailto" + email;
+                            var h2Node = document.createElement("h2");
+                            h2Node.appendChild(aNode);
+
+                            var aNode2 = document.createElement("a");
+                            aNode2.appendChild(document.createTextNode(website));
+                            aNode2.href = website;
+
+                            var detailsNode = document.getElementById("details");
+                            detailsNode.innerHTML = "";
+                            detailsNode.appendChild(h2Node);
+                            detailsNode.appendChild(aNode2);
+                        }
+                    }
+                };
+
+                return false;
+            };
+        }
+    };
+</script>
+```
