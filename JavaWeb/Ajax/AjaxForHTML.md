@@ -5,3 +5,9 @@
 - XML
 - JSON
 - HTML
+
+
+## 例子
+
+![](pic/Snipaste_2019-03-19_17-10-05.png)
+
