@@ -45,3 +45,5 @@
 ```
 
 ![](pic/Snipaste_2019-03-19_18-42-55.png)
+
+点击Andy, Richard, 或Jeremy 会切换不同的
