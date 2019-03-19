@@ -14,3 +14,9 @@ xml文件中的书写方式
 需要先解析xml文件，构建对应的节点，放到目标的html文档对应的div中
 
 需要转换为
+
+```html
+<h2><a href="mailto:andy@clearleft.com">Andy Budd</a></h2>
+<a href="http://andybudd.com/">http://andybudd.com/</a>
+```
+
