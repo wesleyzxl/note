@@ -84,7 +84,11 @@ ${sessionScope.date.day}
 
 pageContext etc.
 
-${pageContext.request.contextPath}
+### pageContext
+
+```
+pageContext: ${pageContext.request.contextPath}
+
 
 ### cookie
 
