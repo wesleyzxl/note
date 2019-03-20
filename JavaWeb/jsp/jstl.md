@@ -114,10 +114,11 @@ WEBINF下定义tld文件
 <tlib-version>1.0</tlib-version>
 <!-- 建议在jsp页面中使用的标签的前缀prefix -->
 <short-name>myshortname</short-name>
-<!-- 作为tld文件的id，用来为一表示当前的tld文件，多个tld文件的 -->
+<!-- 作为tld文件的id，用来为一表示当前的tld文件，多个tld文件的uri不能重复，通过jsp页面的taglib标签的uri属性来引用 -->
 <uri>http://mycompany.com</uri>
 
 <tag>
+    <!--  -->
     <name>hello</name>
     <tag-class>tag.HelloSimpleTag</tag-class>
     <body-content>empty</body-content>
