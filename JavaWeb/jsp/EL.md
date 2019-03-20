@@ -45,5 +45,7 @@ ${param.score + 11}这里进行的是数字的相加
 
 param, paramValues
 
-从Servlet
+从Servlet重定向
 ```java
+@WebServlet(name = "eltest", urlPatterns = "/eltest")
+response.sendRedirect("eldemo.jsp?job=assassin&num=23");
