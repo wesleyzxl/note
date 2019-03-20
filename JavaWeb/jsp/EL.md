@@ -62,4 +62,12 @@ ${paramValues.name}
 
 ## 在EL中可以一直使用对象中的getxxx方法
 
-在Servlet中使用H
+在Servlet中使用session传对象
+
+```java
+Date date = new Date();
+
+HttpSession session = request.getSession();
+session.setAttribute("date", date);
+```
+
