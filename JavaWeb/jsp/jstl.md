@@ -199,6 +199,7 @@ public class HelloSimpleTag implements SimpleTag {
         <body-content>empty</body-content>
 
         <attribute>
+	
             <name>value</name>
             <!-- 设置为必填项 -->
             <required>true</required>
@@ -221,3 +222,6 @@ jsp页面
 
 <myshortname:hello value="${param.name}" count="10"/>
 ```
+
+![](pic/Snipaste_2019-03-20_14-35-33.png)
+
