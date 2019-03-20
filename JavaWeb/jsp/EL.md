@@ -69,6 +69,11 @@ Date date = new Date();
 
 HttpSession session = request.getSession();
 session.setAttribute("date", date);
+response.sendRedirect("eldemo.jsp?job=assassin&num=23");
 ```
 
-于是在
+于是在eldemo.jsp中
+
+```jsp
+${sessionScope.date.day}
+```
