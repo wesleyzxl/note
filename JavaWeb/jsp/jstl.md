@@ -227,4 +227,4 @@ jsp页面
 
 通常情况下开发简单标签直接继承SimpleTagSupport类就可以了，直接调用其对应的getter方法得到对应的API
 
-**案例**
+通过
