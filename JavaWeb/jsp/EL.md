@@ -58,7 +58,7 @@ public...
 ${paramValues.name}
 ```
 
-这里获得的是一个数组
+这里获得的是一个数组，如果需要便利
 
 ## 在EL中可以一直使用对象中的getxxx方法
 
@@ -78,4 +78,4 @@ response.sendRedirect("eldemo.jsp?job=assassin&num=23");
 ${sessionScope.date.day}
 ```
 
-这里相当于使用session.getAttribute("date");获得到O再强转为Date，在调用getDay()方法
+这里相当于使用session.getAttribute("date");获得到Object类型，再强转为Date，在调用getDay()方法
