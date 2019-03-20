@@ -74,3 +74,16 @@ tld文件在做支持
 
 
 WEBINF下定义tld文件
+
+```tld
+<tlib-version>1.0</tlib-version>
+<short-name>myshortname</short-name>
+<uri>http://mycompany.com</uri>
+
+<tag>
+    <name>hello</name>
+    <tag-class>tag.HelloSimpleTag</tag-class>
+    <body-content>empty</body-content>
+</tag>
+```
+
