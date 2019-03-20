@@ -55,7 +55,10 @@ public...
 在eldemo.jsp中接收
 
 ```jsp
-${param.name}
+${paramValues.name}
 ```
 
-这里获得的是一个
+这里获得的是一个数组
+
+## 在EL中可以一直使用对象中的getxxx方法
+
