@@ -239,8 +239,9 @@ JspFragment类的Invoke(java.io.Writer out)：该方法用于执行 JspFragment 
 可以借助StringWriter，在标签处理器中先得到标签体内容输出到页面
 
 ```java
-
-`
+StringWriter sw = new StringWriter();
+bodyContent.invoke(sw);
+```
 
 **\<body-content>**：指定标签体的类型。可能取值有 3 种：
 - empty：没有标签体	
