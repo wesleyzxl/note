@@ -40,19 +40,19 @@ tld文件在做支持
 #### 标签的形式
 - 空标签：
 
-```html
+```jsp
 <hello/>
 ```
 
 - 带有属性的空标签：
 
-```
+```jsp
    <max num1=“3” num2=“5”/>
 ```
 
 - 带有内容的标签：
 
-```
+```jsp
   <greeting>
        hello
   </greeting>
@@ -60,7 +60,7 @@ tld文件在做支持
 
 - 带有内容和属性的标签：
 
-```
+```jsp
  <greeting name=“Tom”>
        hello
   </greeting>
