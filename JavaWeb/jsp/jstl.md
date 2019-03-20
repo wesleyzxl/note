@@ -121,12 +121,19 @@ WEBINF下定义tld文件
     <!-- 标签的名字 -->
     <name>hello</name>
     <tag-class>tag.HelloSimpleTag</tag-class>
-    <!--->
+    <!-- 标签体的类型 -->
     <body-content>empty</body-content>
 </tag>
 ```
 
-此时访问一个jsp页面做测试，console中会打印：
+此时访问一个jsp页面做测试，
+
+```jsp
+<%@ taglib prefix="myshortname" uri="http://mycompany.com" %>
+<myshortname:hello/>
+```
+
+console中会打印：
 
 setJspContext
 doTag
