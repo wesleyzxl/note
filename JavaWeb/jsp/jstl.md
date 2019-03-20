@@ -37,4 +37,17 @@ tld文件在做支持
 - 在 JSP 2.0 以前，所有标签处理器类都必须实现 Tag 接口，这样的标签称为传统标签。
 - JSP 2.0 规范又定义了一种新的类型的标签，称为简单标签，其对应的处理器类要实现 SimpleTag 接口
 
+#### 标签的形式
+- 空标签：\<hello/>
+- 带有属性的空标签：
+   \<max num1=“3” num2=“5”/>
+- 带有内容的标签：
+  <greeting>
+       hello
+  </greeting>
+带有内容和属性的标签：
+ <greeting name=“Tom”>
+       hello
+  </greeting>
+
 
