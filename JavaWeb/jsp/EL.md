@@ -84,3 +84,5 @@ ${sessionScope.date.day}
 
 pageContext etc.
 
+### cookie
+
