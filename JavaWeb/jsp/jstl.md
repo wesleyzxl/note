@@ -32,3 +32,4 @@ tld文件在做支持
 用户定义的一种自定义的jsp标记 。当一个含有自定义标签的jsp页面被jsp引擎编译成servlet时，tag标签被转化成了对一个称为 标签处理类 的对象的操作。于是，当jsp页面被jsp引擎转化为servlet后，实际上tag标签被转化为了对tag处理类的操作。 
 ![](pic/Snipaste_2019-03-20_13-18-16.png)
 
+继承Simple
