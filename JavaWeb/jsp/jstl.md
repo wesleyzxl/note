@@ -111,9 +111,10 @@ public class HelloSimpleTag implements SimpleTag {
 WEBINF下定义tld文件
 
 ```tld
-<!-- 建议在jsp页面中使用的标签的前缀 -->
 <tlib-version>1.0</tlib-version>
+<!-- 建议在jsp页面中使用的标签的前缀prefix -->
 <short-name>myshortname</short-name>
+<!-- 作为tld文件的id，用来为一表示当前的tld文件，多个tld文件的 -->
 <uri>http://mycompany.com</uri>
 
 <tag>
