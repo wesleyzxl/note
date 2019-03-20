@@ -199,7 +199,7 @@ public class HelloSimpleTag implements SimpleTag {
         <body-content>empty</body-content>
 
         <attribute>
-	
+	    <!-- 属性名，需和标签处理类的setter方法定义的属性相同 -->
             <name>value</name>
             <!-- 设置为必填项 -->
             <required>true</required>
