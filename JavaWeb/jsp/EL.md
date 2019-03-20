@@ -62,3 +62,4 @@ ${paramValues.name}
 
 ## 在EL中可以一直使用对象中的getxxx方法
 
+在Servlet中使用H
