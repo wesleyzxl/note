@@ -49,5 +49,11 @@ param, paramValues
 ```java
 @WebServlet(name = "eltest", urlPatterns = "/eltest")
 public...
-	response.sendRedirect("eldemo.jsp?n");
+	response.sendRedirect("eldemo.jsp?name=A&name=B&name=C");
+```
+
+在eldemo.jsp中接收
+
+```jsp
+
 ```
