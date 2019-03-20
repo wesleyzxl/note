@@ -4,6 +4,7 @@
 
 需要将jstl和standard包放到tomcat的lib文件夹下
 
+Servlet中request对象传值
 
 ```java
 List<Customer> list = new ArrayList<>();
@@ -14,3 +15,10 @@ request.setAttribute("list", list);
         request.getRequestDispatcher("tag.jsp").forward(request, response);
 ```
 
+jsp接收：tag.jsp
+
+```jsp
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+
+```
