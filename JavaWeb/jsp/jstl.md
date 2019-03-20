@@ -51,12 +51,18 @@ tld文件在做支持
 ```
 
 - 带有内容的标签：
+
+```
   <greeting>
        hello
   </greeting>
-带有内容和属性的标签：
+```
+
+- 带有内容和属性的标签：
+
+```
  <greeting name=“Tom”>
        hello
   </greeting>
-
+```
 
