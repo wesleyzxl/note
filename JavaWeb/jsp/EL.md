@@ -86,9 +86,15 @@ pageContext etc.
 
 ### pageContext
 
-```
+```jsp
 pageContext: ${pageContext.request.contextPath}
+<br>
 
+sessionId: ${pageContext.session.id}
+<br>
+
+
+```
 
 ### cookie
 
