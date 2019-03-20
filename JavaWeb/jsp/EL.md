@@ -78,4 +78,4 @@ response.sendRedirect("eldemo.jsp?job=assassin&num=23");
 ${sessionScope.date.day}
 ```
 
-这里相当于使用session.getAttribute("date");在强转为Date
+这里相当于使用session.getAttribute("date");获得到O再强转为Date，在调用getDay()方法
