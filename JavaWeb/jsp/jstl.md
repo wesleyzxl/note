@@ -234,4 +234,4 @@ jsp页面
 
 若配置了变迁含有标签体，jsp引擎嗲用setJspBody方法把JspFragment传递标签处理类在SimpleTagSupport中还定义了一个getJspBody方法用于返回JspFragment对象
 
-JspFragment类
+JspFragment类的Invoke(java.io.Writer out)：该方法用于执行 JspFragment 对象所代表的 JSP 代码片段。在 doTag() 方法中可以根据需要调用该方法。若out为null, ze
