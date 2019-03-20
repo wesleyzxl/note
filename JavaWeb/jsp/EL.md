@@ -49,6 +49,5 @@ param, paramValues
 ```java
 @WebServlet(name = "eltest", urlPatterns = "/eltest")
 public...
-	Date date.
-	response.sendRedirect("eldemo.jsp?job=assassin&num=23");
+	response.sendRedirect("eldemo.jsp?n");
 ```
