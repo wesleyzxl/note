@@ -96,7 +96,7 @@ public class HelloSimpleTag implements SimpleTag {
 
     @Override
     public void setJspContext(JspContext jspContext) {
-        System.out.println("getParent");
+        System.out.println("setJspContext");
     }
 
     @Override
@@ -124,5 +124,5 @@ WEBINF下定义tld文件
 
 此时访问一个jsp页面做测试，console中打印：
 
-getParent
+setJspContext
 doTag
