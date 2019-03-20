@@ -87,4 +87,7 @@ pageContext etc.
 ### cookie
 
 ```jsp
-${cookie.JSESSIONID.name} = ${cookie.}
+${cookie.JSESSIONID.name} = ${cookie.JSEESIONID.value}
+```
+
+### header, 
