@@ -213,3 +213,11 @@ public class HelloSimpleTag implements SimpleTag {
         </attribute>
     </tag>
 ```
+
+jsp页面
+
+```jsp
+<%@ taglib prefix="myshortname" uri="http://mycompany.com" %>
+
+<myshortname:hello value="${param.name}" count="10"/>
+```
