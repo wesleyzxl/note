@@ -86,3 +86,5 @@ pageContext etc.
 
 ### cookie
 
+```jsp
+${cookie.JSESSIONID.name} = ${cookie.}
