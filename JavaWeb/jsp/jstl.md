@@ -72,6 +72,41 @@ tld文件在做支持
 - 编写标签库描述(tld)文件，在tld文件中对自定义中进行描述
 - 在JSP页面中导入和使用自定义标签
 
+先卡一下效果
+
+编写完成标签功能的java类
+
+```java
+public class HelloSimpleTag implements SimpleTag {
+    @Override
+    public void doTag() throws JspException, IOException {
+        System.out.println("doTag");
+    }
+
+    @Override
+    public void setParent(JspTag jspTag) {
+        System.out.println("setParent");
+    }
+
+    @Override
+    public JspTag getParent() {
+        System.out.println("getParent");
+        return null;
+    }
+
+    @Override
+    public void setJspContext(JspContext jspContext) {
+        System.out.println("getParent");
+    }
+
+    @Override
+    public void setJspBody(JspFragment jspFragment) {
+        System.out.println("setJspBody");
+    }
+}
+
+```
+
 
 WEBINF下定义tld文件
 
