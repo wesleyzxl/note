@@ -55,10 +55,10 @@ public...
 在eldemo.jsp中接收
 
 ```jsp
-${paramValues.name}
+${paramValues.name[0]}
 ```
 
-这里获得的是一个数组，如果需要便利
+这里获得的是一个数组，遍历需要使用jstl
 
 ## 在EL中可以一直使用对象中的getxxx方法
 
