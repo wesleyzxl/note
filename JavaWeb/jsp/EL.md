@@ -21,8 +21,11 @@ session.setAttribute("com.entity.customer", customer);
 ```
 
 在jsp中写
->name: ${sessionScope["com.entity.customer"].name}是可行的
-	但是${sessionScope.com.entity.customer.name}是不可行的
+>name: ${sessionScope["com.entity.customer"].name}是可获取到值的
+	
+但是
+>${sessionScope.com.entity.customer.name}是不可行的
+
 所以在域对象的属性名中带特殊字符的时候需要用中括号写
 
 
