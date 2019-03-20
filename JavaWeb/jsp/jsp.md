@@ -550,6 +550,7 @@ public class DBCPUtil {
 | ----------- | ------------------------------------- | ----------------------------- |
 | request     | javax.servlet.http.HttpServletRequest | 服务器端接收客服端发送的请求信息 |
 | response    | javax.servlet.http.HttpServletRequest | 服务器端对客户端的回应信息      |
+|session|javax.servlet.http.HttpSession||
 | application | javax.servlet.SeverletContext         | 描述整个应用服务的概念          |
 | pageContext | javax.servlet.jsp.PageContext         | 描述的是一个JSP页面上下文信息   |
 | config      | javax.servlet.ServletConfig           | 取得一些初始化的配置信息        |
