@@ -79,3 +79,8 @@ ${sessionScope.date.day}
 ```
 
 这里相当于使用session.getAttribute("date");获得到Object类型，再强转为Date，在调用getDay()方法
+
+## 其他隐含对象
+
+pageContext etc.
+
