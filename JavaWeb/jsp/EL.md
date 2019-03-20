@@ -105,4 +105,10 @@ ${cookie.JSESSIONID.name} = ${cookie.JSEESIONID.value}
 ### header
 
 
-## EL
+## EL的关系运算符
+
+EL表达式的关系运算符要放在{}里面，放在外面无效
+
+### 关系运算符
+
+
