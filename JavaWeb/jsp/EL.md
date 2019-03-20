@@ -77,3 +77,5 @@ response.sendRedirect("eldemo.jsp?job=assassin&num=23");
 ```jsp
 ${sessionScope.date.day}
 ```
+
+这里相当于使用session.getAttribute("date");在强转为Date
