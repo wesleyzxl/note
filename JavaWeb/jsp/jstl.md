@@ -232,4 +232,6 @@ jsp页面
 
 ## 带标签体的自定义标签
 
-若配置了变迁含有标签体，jsp引擎嗲用setJspBody方法把JspFragment传递标签处理类在SimpleTagSupport中还定义了一个getJspBody
+若配置了变迁含有标签体，jsp引擎嗲用setJspBody方法把JspFragment传递标签处理类在SimpleTagSupport中还定义了一个getJspBody方法用于返回JspFragment对象
+
+JspFragment类
