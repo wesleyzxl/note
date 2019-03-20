@@ -182,7 +182,7 @@ public class HelloSimpleTag implements SimpleTag {
 
     @Override
     public void setJspContext(JspContext jspContext) {
-        pageContext = (PageContext) jspContext;
+        this.pageContext = (PageContext) jspContext;
     }
 
     @Override
