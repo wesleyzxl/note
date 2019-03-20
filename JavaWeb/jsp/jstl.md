@@ -145,4 +145,71 @@ doTag: 标签体逻辑实际应该编写到该方法中
 
 JspContext是pageContext的父类
 
- 
+```java
+public class HelloSimpleTag implements SimpleTag {
+    private PageContext pageContext;
+
+    private String value;
+    private String count;
+
+    public void setValue(String value) {
+        this.value = value;
+    }
+
+    public void setCount(String count) {
+        this.count = count;
+    }
+
+    @Override
+    public void doTag() throws JspException, IOException {
+        JspWriter out = pageContext.getOut();
+        for (int i = 0; i < Integer.parseInt(count); i++) {
+            out.print(value);
+            out.print("<br>");
+        }
+
+    }
+
+    @Override
+    public void setParent(JspTag jspTag) {
+
+    }
+
+    @Override
+    public JspTag getParent() {
+        return null;
+    }
+
+    @Override
+    public void setJspContext(JspContext jspContext) {
+        pageContext = (PageContext) jspContext;
+    }
+
+    @Override
+    public void setJspBody(JspFragment jspFragment) {
+
+    }
+}
+```
+
+```tld
+    <tag>
+        <name>hello</name>
+        <tag-class>tag.HelloSimpleTag</tag-class>
+        <body-content>empty</body-content>
+
+        <attribute>
+            <name>value</name>
+            <!-- 设置为必填项 -->
+            <required>true</required>
+            <!-- 是否能接收运行时参数 -->
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+
+        <attribute>
+            <name>count</name>
+            <required>false</required>
+            <rtexprvalue>false</rtexprvalue>
+        </attribute>
+    </tag>
+```
