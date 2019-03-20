@@ -225,4 +225,4 @@ jsp页面
 
 ![](pic/Snipaste_2019-03-20_14-35-33.png)
 
-通常情况下开发简单标签直接继承SimpleTagSupport类就可以了，直接调用
+通常情况下开发简单标签直接继承SimpleTagSupport类就可以了，直接调用其对应的getter方法得到对应的API
