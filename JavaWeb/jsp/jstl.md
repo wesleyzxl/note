@@ -118,14 +118,15 @@ WEBINF下定义tld文件
 <uri>http://mycompany.com</uri>
 
 <tag>
-    <!--  -->
+    <!-- 标签的名字 -->
     <name>hello</name>
     <tag-class>tag.HelloSimpleTag</tag-class>
+    <!--->
     <body-content>empty</body-content>
 </tag>
 ```
 
-此时访问一个jsp页面做测试，console中打印：
+此时访问一个jsp页面做测试，console中会打印：
 
 setJspContext
 doTag
