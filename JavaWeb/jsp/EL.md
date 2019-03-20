@@ -40,3 +40,5 @@ EL 存取变量数据的方法很简单，例如：${username}。它的意思是
 
 ${param.score + 11}这里进行的是数字的相加
 <%=request.getParameter("score") + 11%>这里只是进行字符串的相加
+
+## 
