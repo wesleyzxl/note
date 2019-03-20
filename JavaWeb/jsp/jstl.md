@@ -111,6 +111,7 @@ public class HelloSimpleTag implements SimpleTag {
 WEBINF下定义tld文件
 
 ```tld
+<!-- 建议在jsp页面中使用的标签的前缀 -->
 <tlib-version>1.0</tlib-version>
 <short-name>myshortname</short-name>
 <uri>http://mycompany.com</uri>
