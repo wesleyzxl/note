@@ -48,4 +48,7 @@ param, paramValues
 从Servlet重定向
 ```java
 @WebServlet(name = "eltest", urlPatterns = "/eltest")
-response.sendRedirect("eldemo.jsp?job=assassin&num=23");
+public...
+	Date date.
+	response.sendRedirect("eldemo.jsp?job=assassin&num=23");
+```
