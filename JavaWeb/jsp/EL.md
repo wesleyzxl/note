@@ -120,4 +120,7 @@ ${param.num >= 60 ? "及格" : "不及格"}
 
 可以作用一个集合，若一个集合不存在或者集合中没有元素，其结果为true
 
+```jsp
+<%-- 假设request对象中有一个 --%>
+${empty requestScope.names}
 ```
