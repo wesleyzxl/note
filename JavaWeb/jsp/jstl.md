@@ -20,5 +20,7 @@ jsp接收：tag.jsp
 ```jsp
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-
+<c:forEach items="${requestScope.list}" var="customer">
+    - ${customer.age}, ${customer.name}<br>
+</c:forEach>
 ```
