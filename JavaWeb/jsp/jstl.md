@@ -122,5 +122,7 @@ WEBINF下定义tld文件
 </tag>
 ```
 
-此时访问一个jsp页面做测试
+此时访问一个jsp页面做测试，console中打印：
 
+getParent
+doTag
