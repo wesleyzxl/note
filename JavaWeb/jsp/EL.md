@@ -55,5 +55,7 @@ public...
 在eldemo.jsp中接收
 
 ```jsp
-
+${param.name}
 ```
+
+这里获得的是一个
