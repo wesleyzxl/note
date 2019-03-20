@@ -1,12 +1,14 @@
 # EL
 
+```jsp
 <jsp:useBean id="customer" class:"com.entity.customer" scope="session"></jsp:useBean>
 <jsp:setProperty property="age" value="12" name="customer"/>
 
+在本页面上可以直接获取到值
 age:
 <jsp:getProperty property="age" name="customer"/>
 
-如果是调转到另一个页面的时候上面的一行代码需要加上\<jsp:useBean>
+但是如果是调转到另一个页面的时候上面的一行代码需要加上\<jsp:useBean>
 
 但是使用${sessionScope.customer.age}就算跳转到另一个页面也可以得到age的值
 同时使用${sessionScope.customer["age"]}也可以，这种情况适合在：
