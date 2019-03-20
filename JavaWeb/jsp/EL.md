@@ -93,7 +93,7 @@ pageContext: ${pageContext.request.contextPath}
 sessionId: ${pageContext.session.id}
 <br>
 
-
+sessionAttributeNames: ${pageContext.session.attributeName}
 ```
 
 ### cookie
