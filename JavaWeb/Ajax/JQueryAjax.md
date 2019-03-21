@@ -77,6 +77,15 @@ url = this.href + " h2 a"
 
 下面是改写传入xml的脚本
 
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<details>
+    <name>Andy Budd</name>
+    <website>http://andybudd.com/</website>
+    <email>andy@clearleft.com</email>
+</details>
+```
+
 ```jsp
 	<script type="text/javascript" src="../jsDemo/jquery-3.3.1.js"></script>
         <script type="text/javascript">
@@ -105,4 +114,19 @@ url = this.href + " h2 a"
 - function为回调函数，当相应结束时，回调函数被触发，相应结果在data中
 
 
-如果导入JSON,
+如果导入JSON，和导入xml唯一不同的就是获取name, email, website的方式不一样
+
+```js
+{"person": {
+  "name":"Andy Budd",
+  "website":"http://andybudd.com/",
+  "email":"andy@clearleft.com"
+  }
+}
+```
+
+获取方式为
+
+```js
+var name = data
+```
