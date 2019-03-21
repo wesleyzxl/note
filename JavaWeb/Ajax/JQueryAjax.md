@@ -72,3 +72,34 @@ url = this.href + " h2 a"
 ```
 
 这中情况下获取的是全部的html文件，但是只展现了\<h2>\</h2>部分里面的\<a>\</a>。注意空格
+
+## $.get 和 $.post
+
+下面是改写传入xml的脚本
+
+```jsp
+	<script type="text/javascript" src="../jsDemo/jquery-3.3.1.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                $("a").click(function () {
+                    var url = this.href;
+                    var args = {"time":new Date()};
+
+                    $.get(url, args, function (data) {
+                        // 获取xml文件中的文本
+                        var name = $(data).find("name").text();
+                        var email = $(data).find("email").text();
+                        var website = $(data).find("website").text();
+
+                        $("#details").empty().append("<h2><a href='" + email + "'>" + name + "</a></h2>")
+                            .append("<a href='" + website + "'>" + website + "</a>");
+                    });
+
+                    return false;
+                });
+            })
+        </script>
+```
+
+args为JSON格式
+function为
