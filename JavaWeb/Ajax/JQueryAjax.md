@@ -76,7 +76,7 @@ url = this.href + " h2 a"
 ## $.get 和 $.post
 
 $.get() 方法使用 GET 方式来进行异步请求. 它的结构是: $.get(url[, data][, callback][, type]);
-
+![](pic/pic4.png)
 
 $.get() 方法的回调函数只有两个参数: data 代表返回的内容, 可以是 XML 文档, JSON 文件, HTML 片段等; textstatus 代表请求状态, 其值可能为: succuss, error, notmodify, timeout 4 种.
 $.get()  和 $.post() 方法时 jQuery 中的全局函数, 而 find() 等方法都是对 jQuery 对象进行操作的方法
@@ -150,4 +150,7 @@ var email = data.person.email;
 var website = data.person.website;
 ```
 
-注意要在type属性上指定为JSON。
+注意要在type属性上指定为JSON，或者把$.get改成$.getJSON。
+
+post也一样
+
