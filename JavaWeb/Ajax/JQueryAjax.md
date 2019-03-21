@@ -1,3 +1,5 @@
+# 用JQuery操作Ajax
+
 ## load()方法
 
 - load() 方法是 jQuery 中最为简单和常用的 Ajax 方法, **能载入远程的 HTML 代码并插入到 DOM 中**
@@ -154,3 +156,5 @@ var website = data.person.website;
 
 post也一样
 
+
+## 案例：
