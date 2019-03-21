@@ -111,7 +111,7 @@ url = this.href + " h2 a"
 ```
 
 - args为JSON格式
-- function为回调函数，当相应结束时，回调函数被触发，相应结果在data中。
+- function为回调函数，当相应结束时，回调函数被触发，**返回结果在data中**。
 
 
 如果导入JSON，和导入xml唯一不同的就是获取name, email, website的方式不一样
