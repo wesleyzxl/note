@@ -101,5 +101,8 @@ url = this.href + " h2 a"
         </script>
 ```
 
-args为JSON格式
-function为
+- args为JSON格式
+- function为回调函数，当相应结束时，回调函数被触发，相应结果在data中
+
+
+如果导入JSON,
