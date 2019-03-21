@@ -160,11 +160,86 @@ post也一样
 ## 案例：验证用户名是否没注册
 
 ```jsp
+<%@ page pageEncoding="UTF-8" %>
+<html>
+<head>
+    <title>Title</title>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/jsDemo/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(":input[name='username']").change(function () {
+                var val = $(this).val();
+                val = $.trim(val);
 
+                if (val !== "") {
+                    var url = "${pageContext.request.contextPath}/validateUsername";
+                    var args = {"username":val, "time":new Date()};
+                    $.post(url, args, function (data) {
+                        $("#message").html(data);
+                    });
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+
+<form action="" method="post">
+    <input id="username" type="text" name="username">
+    <div id="message"></div>
+    <br>
+    <input type="password" name="password" id="password">
+    <br>
+    <input type="submit" id="submit" value="submit">
+</form>
+
+</body>
+</html>
 ```
 
 模拟服务端操作
 
 ```java
+package ex;
 
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.List;
+
+/**
+ * @ClassName Username
+ * @Discription
+ * @Author xuelo
+ * @Date 3/21/2019 11:21 PM
+ */
+
+@WebServlet(name = "usernameHint", urlPatterns = "/validateUsername")
+public class Username extends HttpServlet {
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setContentType("text/html;charset=UTF-8");
+        request.setCharacterEncoding("UTF-8");
+        List<String> usernames = Arrays.asList("aaa", "bbb", "ccc");
+
+        String username = request.getParameter("username");
+        String result = null;
+        if (usernames.contains(username)) {
+            result = "<font color='red'>该用户已被使用</font>";
+        } else {
+            result = "<font color='green'>该用户名可以被使用</font>";
+        }
+        response.getWriter().println(result);
+
+    }
+
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        this.doPost(request, response);
+    }
+}
 ```
