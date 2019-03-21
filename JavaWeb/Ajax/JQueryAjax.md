@@ -128,5 +128,7 @@ url = this.href + " h2 a"
 获取方式为
 
 ```js
-var name = data
+var name = data.person.name;
+var email = data.person.email;
+var website = data.person.website;
 ```
