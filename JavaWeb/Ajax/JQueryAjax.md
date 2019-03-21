@@ -157,4 +157,14 @@ var website = data.person.website;
 post也一样
 
 
-## 案例：
+## 案例：验证用户名是否没注册
+
+```jsp
+
+```
+
+模拟服务端操作
+
+```java
+
+```
