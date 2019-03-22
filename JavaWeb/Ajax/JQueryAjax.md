@@ -231,7 +231,10 @@ public class Username extends HttpServlet {
         if (usernames.contains(username)) {
             result = "<font color='red'>该用户已被使用</font>";
         } else {
-            result = "<font color='green'>该用户名可以被使用</font>";
+            result = "<font color='green'>该用户名可以被使用</font>";|column1|column2|column3|
+|-|-|-|
+|content1|content2|content3|
+
         }
         response.getWriter().println(result);
 
